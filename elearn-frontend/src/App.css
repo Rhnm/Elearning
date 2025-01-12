@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px)
+{
+.container-fluid .jumbotron, .container .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+@media screen and (min-width: 768px)
+{
+.jumbotron {
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+}
+
+.jumbotron {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.form-label{
+  display:flex;
+}
+
+/* Add these styles to your CSS file */
+.App {
+  transition: transform 0.3s ease;
+}
+
+.chat-hidden {
+  transform: translateY(100%);
+}
+
+.chat-visible {
+  transform: translateY(0);
+}
+
+.chat-messages {
+  display: flex;
+  width:100%;
+  flex-direction: column;
+}
+
+.message {
+  padding: 8px;
+  margin: 4px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #5bc0de; /* Style for sent messages */
+  color: #fff;
+}
+
+.received {
+  align-self: flex-start;
+  background-color: #d3d3d3; /* Style for received messages */
+  color: #000;
+}
+
+.sender {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.nav-link{
+  background: transparent !important;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.nav-link.active {
+  background-color: #FFFFED !important;
+  color: #000;
+  }
+
+  .navbar-dark, .navbar[data-bs-theme=dark] {
+    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-active-color: #000 !important;
+    }
